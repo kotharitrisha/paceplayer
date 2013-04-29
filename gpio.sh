@@ -1,0 +1,60 @@
+sudo chmod 777 /sys/class/gpio/export
+
+echo 22 > /sys/class/gpio/export
+echo 23 > /sys/class/gpio/export
+echo 46 > /sys/class/gpio/export
+echo 47 > /sys/class/gpio/export
+echo 29 > /sys/class/gpio/export
+echo 70 > /sys/class/gpio/export
+ echo 72 > /sys/class/gpio/export
+echo 73 > /sys/class/gpio/export
+echo 74 > /sys/class/gpio/export
+echo 75 > /sys/class/gpio/export
+echo 26 > /sys/class/gpio/export
+echo 65 > /sys/class/gpio/export
+
+sudo chmod 777 /sys/class/gpio/gpio22/direction
+sudo chmod 777 /sys/class/gpio/gpio22/value
+sudo chmod 777 /sys/class/gpio/gpio23/direction
+sudo chmod 777 /sys/class/gpio/gpio23/value
+sudo chmod 777 /sys/class/gpio/gpio26/direction
+sudo chmod 777 /sys/class/gpio/gpio26/value
+sudo chmod 777 /sys/class/gpio/gpio46/direction
+sudo chmod 777 /sys/class/gpio/gpio46/value
+sudo chmod 777 /sys/class/gpio/gpio47/direction
+sudo chmod 777 /sys/class/gpio/gpio47/value
+sudo chmod 777 /sys/class/gpio/gpio29/direction
+sudo chmod 777 /sys/class/gpio/gpio29/value
+sudo chmod 777 /sys/class/gpio/gpio70/direction
+sudo chmod 777 /sys/class/gpio/gpio70/value
+sudo chmod 777 /sys/class/gpio/gpio72/direction
+sudo chmod 777 /sys/class/gpio/gpio72/value
+sudo chmod 777 /sys/class/gpio/gpio73/direction
+sudo chmod 777 /sys/class/gpio/gpio73/value
+sudo chmod 777 /sys/class/gpio/gpio74/direction
+sudo chmod 777 /sys/class/gpio/gpio74/value
+sudo chmod 777 /sys/class/gpio/gpio75/direction
+sudo chmod 777 /sys/class/gpio/gpio75/value
+sudo chmod 777 /sys/class/gpio/gpio65/direction
+sudo chmod 777 /sys/class/gpio/gpio65/value
+
+echo out > /sys/class/gpio/gpio22/direction
+echo out > /sys/class/gpio/gpio23/direction
+echo out > /sys/class/gpio/gpio26/direction
+echo out > /sys/class/gpio/gpio65/direction
+echo out > /sys/class/gpio/gpio46/direction
+echo out > /sys/class/gpio/gpio47/direction
+echo out > /sys/class/gpio/gpio29/direction
+echo out > /sys/class/gpio/gpio70/direction
+echo out > /sys/class/gpio/gpio72/direction
+echo out > /sys/class/gpio/gpio73/direction
+echo out > /sys/class/gpio/gpio74/direction
+echo out > /sys/class/gpio/gpio75/direction
+
+echo 1 > /sys/class/gpio/gpio46/value
+echo 1 > /sys/class/gpio/gpio26/value 
+echo 1 > /sys/class/gpio/gpio47/value 
+echo 1 > /sys/class/gpio/gpio65/value
+#echo 0 > /sys/class/gpio/gpio70/value
+#echo 0 > /sys/class/gpio/gpio46/value
+
